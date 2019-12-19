@@ -4,8 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Bootcamp</title>
+  
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<link rel="stylesheet" href="../FE_TPM_Bootcamp/styles/style.css">
+	<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css-faq.css">
+
 </head>
 <body>
 <div class="header">
@@ -45,12 +51,99 @@
 		
 	</div>
 </div>
+
+  	<div class="faq-page">
+		<center>
+			<h1>FAQ</h1>
+			<h2>Lorem ipsum</h2>
+		</center>
+		<div class="faq">
+			<div class="faq-left">
+				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+			</div>
+			<div class="faq-right">
+				<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+				<button class="faq-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</button>
+				<div class="faq-text">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis minus provident, aliquam repellat dolores iste quaerat? Aut repudiandae error voluptate consequatur itaque minus, voluptates sapiente dolor quibusdam aliquid adipisci?</p>
+				</div><br>
+			</div>
+		</div>
+		</div>
+	<script src="jquery.js"></script>
+	<script src="Bootstrap/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+	<script>
+        let faq = 
+        document.getElementsByClassName("faq-title");
+
+        for (let i = 0; i < faq.length; i++){
+            faq[i].onclick = function (){
+            let content = this.nextElementSibling; // membaca object dari button 
+            this.classList.toggle('is-open'); // untuk membaca faq yg aktiv
+
+                if(content.style.maxHeight){
+                    // menutup faq
+                    content.style.maxHeight = null;
+                } 
+                else{
+                    // membuka faq
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            }
+        }
+   </script>
+
 <div class="content">
 	<div class="about"></div>
 	<div class="why"></div>
 </div>
 
-<script src="bootstrap.min.js"></script>
+<script src="jquery.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
