@@ -79,7 +79,7 @@ html,body{
 }
 
 .header{
-	background-image: url('img/galaxy.png');
+	background-image: url('../assets/Galaxy-Landing.png');
 	width:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
