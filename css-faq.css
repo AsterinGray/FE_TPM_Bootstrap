@@ -12,7 +12,7 @@
 }
 
 .faq-left , .faq-right{
-    width: 40%;
+    width: 40%
 }      
 
 button.faq-title{
@@ -50,3 +50,16 @@ button.faq-title:hover, button.faq-title.is-open{
     overflow: hidden;
     transition: 0.5s ease-in-out;
 }
+
+@media only screen and (max-width: 420px){
+    .faq {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .faq-left, .faq-right{
+        width: 80%;
+    }
+}
+
