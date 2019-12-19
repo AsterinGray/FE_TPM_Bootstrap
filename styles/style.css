@@ -1,0 +1,247 @@
+html,body{
+	margin:0;
+	padding:0;
+	font-family: verdana;
+	height:100%;
+}
+
+/*for navbar*/
+
+.navsbar{
+	width:100%;
+	display: flex;
+	align-items: center;
+	color:white;
+	box-sizing: border-box;
+	justify-content: space-between;
+	align-items: center;
+	padding:1em 1em;
+}
+.navsbar .gambar > img{
+	width: 4em;
+	height: auto;
+}
+.navs-link{
+	font-size: 1.2em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.navs a{
+	padding: 10px 10px;
+	text-decoration: none;
+	margin:0 10px;
+	transition: .4s;
+	color:white;
+}
+
+.navs a:hover{
+	background-color:salmon;
+	color:white;
+	margin:0px;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	border-radius: 1em;
+	transition: .4s;
+	text-decoration: none;
+}
+.navs span{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border:1px solid salmon;
+	border-radius: 1em;
+}
+.navs span a{
+	color:salmon;
+}
+
+.ham-bar{
+	display:none;
+}
+
+.ham{
+	padding: 5px 8px;
+}
+
+.hamburger{
+	width: 2em;
+	height: .3em;
+	background-color: black;
+	margin: .3em 0;
+}
+.ham-bar > img{
+	width: 4em;
+	height: auto;
+}
+.navs-links{
+	display:none;
+}
+
+.header{
+	background-image: url('img/galaxy.png');
+	width:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	
+}
+
+
+/*for landing*/
+
+.landing{
+	padding:60px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 100%;
+}
+.landing > img{
+	width:40%;
+	height:auto;
+}
+.landing .text{
+	width:40%;
+}
+.landing .kotak{
+	width:20vh;
+	height:5px;
+	background-color: salmon;	
+}
+.landing h1{
+	color:salmon;
+}
+.landing p{
+	color:white;
+}
+
+.navsbar .logo{
+	display:block;
+}
+
+.navsbar > img.gambar{
+		display: block;
+	}
+
+@media only screen and (max-width: 800px)
+{
+	.navsbar >.gambar>img#logo{
+		display:none;
+	}
+	.ham-bar{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding:1em 1em;
+		box-sizing: border-box;
+		transition:1s;
+	}
+
+	.ham{
+		border:1px solid salmon;
+	}
+	.hamburger{
+		background-color: white;
+	}
+	.navsbar >.gambar>img#logo{
+		display:none;
+	}
+	.navsbar{
+		height:130px;
+		width:100%;
+		overflow: scroll;
+		background-color:none;
+		display: none;
+	}
+	.navs-link{
+		display: flex;
+		flex-direction: column;
+		margin:auto;
+		text-align: center;
+		transition:1s;
+	}
+	.navs-link .navs{
+		margin-bottom: 15px;
+		margin-top: 5px;
+	}
+	.navs-link .navs a{
+		color:white;
+	}
+	.landing{
+		padding: 10px;
+		display:flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width:100%;
+	}
+
+}
+@media only screen and (max-width: 500px) 
+{
+	.ham-bar{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding:1em 1em;
+		box-sizing: border-box;
+		background-color: white;
+		transition:.8s;
+	}
+	.ham{
+		border: 0;
+	}
+	.hamburger{
+		background-color: black;
+	}
+	.navsbar >.gambar>img{
+		display:none;
+	}
+	.navsbar{
+		width:100%;
+		overflow: scroll;
+		display:none;
+	}
+	.navs-link{
+		display: flex;
+		flex-direction: column;
+		margin:auto;
+		text-align: center;
+		background-color: white;
+		transition:1s;
+	}
+	.navs-link .navs{
+		margin-bottom: 15px;
+		margin-top: 5px;
+	}
+	.navs-link .navs a{
+		color:black;
+	}
+	.navs-link .navs a:hover{
+		color:white;
+	}
+	.landing{
+		padding: 10px;
+		display:flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		width:100%;
+	}
+}
+
+.content .about{
+	width:100%;
+	height:100vh;
+	background-color: green;
+}
+
+.content .why{
+	width:100%;
+	height:100vh;
+	background-color: salmon;
+}
