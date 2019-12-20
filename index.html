@@ -5,16 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Bootcamp</title>
   
+	<link rel="icon" href="assets/.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 	<link rel="stylesheet" href="styles/style.css">
 	<link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css-faq.css">
 
 </head>
 <body>
 <div class="header">
 	<div class="ham-bar">
-		<img src="assets/Logo.png" alt="">
+		<img src="assets/Bootcamp.png" alt="">
 		<div class="ham">
 			<div class="hamburger"></div>
 			<div class="hamburger"></div>
@@ -23,7 +23,7 @@
 	</div>
 	<div class="navsbar">
 		<div class="gambar">
-			<img src="assets/Logo.png" alt="" class="logo" id="logo">
+			<img src="assets/Bootcamp.png" alt="" class="logo" id="logo">
 		</div>
 		<div class="navs-link">
 			<div class="navs"><a href="">Home</a></div>
@@ -38,7 +38,7 @@
 	</div>
 
 	<div class="landing">
-			<img src="assets/Logo.png" alt="">
+			<img src="assets/About_illustration1.png" alt="">
 			<div class="text">
 			<h1>Apa Itu Bootcamp?</h1>
 			<div class="kotak"></div>
@@ -113,27 +113,6 @@
 	<script src="jquery.js"></script>
 	<script src="Bootstrap/js/bootstrap.min.js"></script>
 	<script src="main.js"></script>
-	<script>
-        let faq = 
-        document.getElementsByClassName("faq-title");
-
-        for (let i = 0; i < faq.length; i++){
-            faq[i].onclick = function (){
-            let content = this.nextElementSibling; // membaca object dari button 
-            this.classList.toggle('is-open'); // untuk membaca faq yg aktiv
-
-                if(content.style.maxHeight){
-                    // menutup faq
-                    content.style.maxHeight = null;
-                } 
-                else{
-                    // membuka faq
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            }
-        }
-   </script>
-
 <div class="content">
 	<div class="about"></div>
 	<div class="why"></div>
