@@ -58,7 +58,7 @@ html,body{
 .navs span{
 	padding-top: 3px;
 	padding-bottom: 3px;
-	border:1px solid black
+	border:1px solid black;
 	border-radius: 1em;
 }
 .navs span a{
@@ -311,6 +311,29 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 
 }
+
+.why{
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	padding: 5em;
+}
+
+.why .text{
+	width: 50%;
+}
+
+.why .kotak{
+	width:20vh;
+	height:5px;
+	background-color: deepskyblue;	
+}
+
+.why h1{
+	font-family: Fontania;
+}
+
+
 @media only screen and (max-width: 500px) 
 {
 	.ham-bar{
@@ -374,17 +397,7 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 }
 
-.content .about{
-	width:100%;
-	height:100vh;
-	background-color: green;
-}
 
-.content .why{
-	width:100%;
-	height:100vh;
-	background-color: salmon;
-}
 
 /*for fonts*/
 
