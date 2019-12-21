@@ -213,12 +213,11 @@ html,body{
 .faq-page{
 	margin: 0;
 	padding: 0;
-	height: 100vh;
+	height: fit-content;
 	
 }
 
 .faq{
-	margin: 60px 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -266,7 +265,6 @@ button.faq-title:hover, button.faq-title.is-open{
 	transition: 0.5s ease-in-out;
 }
 
-
 .Contact{
 	background-image: url('../assets/FAQs.png');
 	width:100%;
@@ -281,8 +279,6 @@ button.faq-title:hover, button.faq-title.is-open{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	height: 100%;
-	margin: 0;
-	padding: 0;
 }
 
 .contact-left, .contact-right{
@@ -317,32 +313,6 @@ padding: 10px;
 display: flex;
 flex-direction: column;
 }
-=======
-.contact-us{
-	background-color: green;
-	padding: 3em;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-.social-media{
-	width: 40%;
-}
-
-.form{
-	background-color: greenyellow;
-	border-radius: .4em;
-	width: 30%;
-}
-
-.form  input{
-	width: 25em;
-	margin	: .5em;
-}
-
-
-	
 
 @media only screen and (max-width: 900px)
 {
@@ -497,14 +467,6 @@ flex-direction: column;
 		align-items: center;
 		width:100%;
 	}
-}
-
-@media only screen and (max-width: 700px) {
-	.FAQs{
-		width:100%;
-		height: 1200px;
-	}
-
 	.faq {
 		display: flex;
 		flex-direction: column;
@@ -525,6 +487,9 @@ flex-direction: column;
 		font-size: 25px;
 		float: right;
 	}
+}
+
+@media only screen and (max-width: 700px) {
 	.contact-page{
 	display: flex;
 	flex-direction: row;
