@@ -397,6 +397,28 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 }
 
+.contact-us{
+	background-color: green;
+	padding: 3em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.social-media{
+	width: 40%;
+}
+
+.form{
+	background-color: greenyellow;
+	border-radius: .4em;
+	width: 30%;
+}
+
+.form  input{
+	width: 25em;
+	margin	: .5em;
+}
 
 
 /*for fonts*/
