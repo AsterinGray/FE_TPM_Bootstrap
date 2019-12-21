@@ -12,8 +12,7 @@ html,body{
 	width:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 100%;
-	
+	min-height: 100vh;
 }
 .navsbar{
 	width:100%;
@@ -87,22 +86,27 @@ html,body{
 	display:none;
 }
 .container{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 100%;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    padding:0!important;
 }
-.container h1{
-	font-family: Fontania;
-	max-width:11em;
+.container > img{
+	max-width: 35%;
+	height: auto;
 }
-.container img{
-	width:40%;
-	min-width: 100px;
-	height:auto;
+.container .title{
+	max-width: 500px;
 }
-
+.container .title h1{
+	font-family: "Fontania";
+	font-size: 2.5em;
+	text-align: left;
+}
 /*for landing*/
 
 .landing{
@@ -110,10 +114,10 @@ html,body{
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	padding:4em 8em;
 }
 .landing > img{
-	width:40%;
-	min-width: 100px;
+	max-width: 35%;
 	height:auto;
 }
 .landing .text{
@@ -149,23 +153,30 @@ html,body{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	padding:3em;
+	padding:4em;
 }
-.sponsor .gold,.sponsor .silver,.sponsor .Media{
+.sponsor .platinum, .sponsor .gold,.sponsor .silver,.sponsor .Media{
 	display: flex;
 	flex-flow: wrap;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	margin:2em;
 }
-
-.sponsor .platinum img, .sponsor .gold img, .sponsor .silver img{
-	max-width: 15em;
-	margin:1em;
+.sponsor span h2{
+	font-size: 2.25rem;
 }
-.sponsor .Media img{
+.sponsor .platinum img{
+	max-width: 25em;
+	margin:1.3em;
+}
+.sponsor .gold img{
+	max-width:17em;
+	margin:1.3em;
+}
+.sponsor .Media img,.sponsor .silver img{
 	max-width: 12em;
-	margin:1em;
+	margin:1.3em;
 }
 
 
@@ -283,13 +294,15 @@ button.faq-title:hover, button.faq-title.is-open{
 		display:flex;
 		justify-content: center;
 		align-items: center;
-		flex-direction: column;
+		flex-wrap: wrap-reverse!important;
 		width:100%;
 		overflow: hidden;
 	}
-	.container h1{
-		margin: 1em;
+	.container .title h1{
 		text-align: center;
+	}
+	.container img{
+		max-width:80%;
 	}
 	.landing{
 		padding: 10px;
@@ -304,10 +317,34 @@ button.faq-title:hover, button.faq-title.is-open{
 		text-align: center;
 	}
 	.landing .kotak{
-		margin:0.5em auto;
+		margin:0.2em auto;
 	}
 	.landing .text{
 		width:90%;
+	}
+	.landing img{
+		max-width: 50%;
+	}
+	.sponsor .platinum, .sponsor .gold,.sponsor .silver,.sponsor .Media{
+		display: flex;
+		flex-flow: wrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin:2em;
+	}
+
+	.sponsor .platinum img{
+		max-width: 15em;
+		margin:1.3em;
+	}
+	.sponsor .gold img{
+		max-width:12em;
+		margin:1.3em;
+	}
+	.sponsor .Media img,.sponsor .silver img{
+		max-width: 10em;
+		margin:1.3em;
 	}
 
 }
@@ -355,6 +392,10 @@ button.faq-title:hover, button.faq-title.is-open{
 	.navs-link .navs a:hover{
 		color:white;
 	}
+	.container img{
+		max-width: 80%;
+	}
+	
 	.landing{
 		padding: 10px;
 		display:flex;
@@ -362,6 +403,32 @@ button.faq-title:hover, button.faq-title.is-open{
 		justify-content: space-around;
 		align-items: center;
 		width:100%;
+	}
+	.landing img{
+		max-width: 80%;
+	}
+	.sponsor .platinum, .sponsor .gold,.sponsor .silver,.sponsor .Media{
+		display: flex;
+		flex-flow: wrap;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		margin:2em;
+	}
+	.sponsor span h2{
+		font-size: 1.2em;
+	}
+	.sponsor .platinum img{
+		max-width: 12em;
+		margin:1.3em;
+	}
+	.sponsor .gold img{
+		max-width:8em;
+		margin:1.3em;
+	}
+	.sponsor .Media img,.sponsor .silver img{
+		max-width: 6em;
+		margin:1.3em;
 	}
 	.faq {
 		display: flex;
