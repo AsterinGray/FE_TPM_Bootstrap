@@ -5,8 +5,16 @@ html,body{
 	height:100%;
 }
 
-/*for navbar*/
 
+/*for header*/
+.header{
+	background-image: url('../assets/Landing.png');
+	width:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+	
+}
 .navsbar{
 	width:100%;
 	display: flex;
@@ -33,7 +41,8 @@ html,body{
 	text-decoration: none;
 	margin:0 10px;
 	transition: .4s;
-	color:white;
+	color:black;
+	font-weight: bold;
 }
 
 .navs a:hover{
@@ -49,11 +58,11 @@ html,body{
 .navs span{
 	padding-top: 3px;
 	padding-bottom: 3px;
-	border:1px solid salmon;
+	border:1px solid black
 	border-radius: 1em;
 }
 .navs span a{
-	color:salmon;
+	color:black;
 }
 
 .ham-bar{
@@ -77,29 +86,34 @@ html,body{
 .navs-links{
 	display:none;
 }
-
-.header{
-	background-image: url('../assets/Landing.png');
-	width:100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	min-height: 100%;
-	
-}
-
-
-/*for landing*/
-
-.landing{
-	padding:60px;
+.container{
 	display:flex;
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
 	min-height: 100%;
 }
+.container h1{
+	font-family: Fontania;
+	max-width:11em;
+}
+.container img{
+	width:40%;
+	min-width: 100px;
+	height:auto;
+}
+
+/*for landing*/
+
+.landing{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
 .landing > img{
 	width:40%;
+	min-width: 100px;
 	height:auto;
 }
 .landing .text{
@@ -108,13 +122,15 @@ html,body{
 .landing .kotak{
 	width:20vh;
 	height:5px;
-	background-color: salmon;	
+	background-color: deepskyblue;	
 }
 .landing h1{
-	color:salmon;
+	color:black;
+	font-family: "Fontania";
 }
 .landing p{
-	color:white;
+	color:black;
+	text-align: justify;
 }
 
 .navsbar .logo{
@@ -124,6 +140,34 @@ html,body{
 .navsbar > img.gambar{
 	display: block;
 }
+
+/*for Sponsor*/
+.sponsor{
+	background-image: url('../assets/Sponsor.png');
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding:3em;
+}
+.sponsor .gold,.sponsor .silver,.sponsor .Media{
+	display: flex;
+	flex-flow: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.sponsor .platinum img, .sponsor .gold img, .sponsor .silver img{
+	max-width: 15em;
+	margin:1em;
+}
+.sponsor .Media img{
+	max-width: 12em;
+	margin:1em;
+}
+
 
 
 /* FAQ */
@@ -190,7 +234,7 @@ button.faq-title:hover, button.faq-title.is-open{
 }
 	
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 900px)
 {
 	.navsbar >.gambar>img#logo{
 		display:none;
@@ -206,10 +250,10 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 
 	.ham{
-		border:1px solid salmon;
+		border:1px solid deepskyblue;
 	}
 	.hamburger{
-		background-color: white;
+		background-color: black;
 	}
 	.navsbar >.gambar>img#logo{
 		display:none;
@@ -233,7 +277,19 @@ button.faq-title:hover, button.faq-title.is-open{
 		margin-top: 5px;
 	}
 	.navs-link .navs a{
-		color:white;
+		color:black;
+	}
+	.container{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width:100%;
+		overflow: hidden;
+	}
+	.container h1{
+		margin: 1em;
+		text-align: center;
 	}
 	.landing{
 		padding: 10px;
@@ -242,6 +298,16 @@ button.faq-title:hover, button.faq-title.is-open{
 		justify-content: space-around;
 		align-items: center;
 		width:100%;
+		overflow: hidden;
+	}
+	.landing h1{
+		text-align: center;
+	}
+	.landing .kotak{
+		margin:0.5em auto;
+	}
+	.landing .text{
+		width:90%;
 	}
 
 }
@@ -318,4 +384,11 @@ button.faq-title:hover, button.faq-title.is-open{
 	width:100%;
 	height:100vh;
 	background-color: salmon;
+}
+
+/*for fonts*/
+
+@font-face {
+	font-family: "Fontania";
+	src:url('../assets/Fontania.ttf') format('truetype');
 }
