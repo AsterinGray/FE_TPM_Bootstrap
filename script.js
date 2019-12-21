@@ -5,10 +5,10 @@ var logo = document.querySelector('.logo');
 
 
 hem.addEventListener('click',function(){
-	tempat.classList.toggle('navsbar');
-	logo.style.display='none';
-	tempat.style.height='120px';
-	tempat.style.overflow='scroll';
+    tempat.classList.toggle('navsbar');
+    logo.style.display='none';
+    tempat.style.height='120px';
+    tempat.style.overflow='scroll';
 });
 
 let faq = 
