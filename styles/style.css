@@ -141,6 +141,37 @@ html,body{
 	display: block;
 }
 
+.why{
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 5em;
+}
+
+.why .text{
+	text-align: justify;
+	width: 50%;
+}
+
+.why .kotak{
+	width:20vh;
+	height:5px;
+	background-color: deepskyblue;	
+}
+
+.why h1{
+	font-family: Fontania;
+}
+
+.caro{
+	width: 50%;
+}
+
+.carousel-control-prev-icon , .carousel-control-next-icon{
+	color: cyan;
+}
+
 /*for Sponsor*/
 .sponsor{
 	background-image: url('../assets/Sponsor.png');
@@ -232,6 +263,30 @@ button.faq-title:hover, button.faq-title.is-open{
 	overflow: hidden;
 	transition: 0.5s ease-in-out;
 }
+
+.contact-us{
+	background-color: green;
+	padding: 3em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.social-media{
+	width: 40%;
+}
+
+.form{
+	background-color: greenyellow;
+	border-radius: .4em;
+	width: 30%;
+}
+
+.form  input{
+	width: 25em;
+	margin	: .5em;
+}
+
 	
 
 @media only screen and (max-width: 900px)
@@ -310,29 +365,30 @@ button.faq-title:hover, button.faq-title.is-open{
 		width:90%;
 	}
 
-}
+	.why{
+		flex-direction: column-reverse;
+		justify-content: center;
+		justify-items: center;
+		align-items: center;
+		padding: 1em;
+	}
 
-.why{
-	background-color: white;
-	display: flex;
-	flex-direction: row;
-	padding: 5em;
-}
+	.why h1{
+		text-align: center;
+	}
+	.why .text{
+		align-items: center;
+		width: 90%;
+	}
 
-.why .text{
-	width: 50%;
-}
+	.why .kotak{
+		margin: 0.5em auto;
+	}
 
-.why .kotak{
-	width:20vh;
-	height:5px;
-	background-color: deepskyblue;	
+	.caro{
+		width: 90%;
+	}
 }
-
-.why h1{
-	font-family: Fontania;
-}
-
 
 @media only screen and (max-width: 500px) 
 {
