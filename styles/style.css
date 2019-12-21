@@ -214,10 +214,11 @@ html,body{
 	margin: 0;
 	padding: 0;
 	height: 100vh;
+	
 }
 
 .faq{
-	margin: 80px 0;
+	margin: 60px 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -242,7 +243,7 @@ button.faq-title{
 button.faq-title:after {
 	content: '\f055';
 	font-family: "fontawesome";
-	font-size: 14px;
+	font-size: 18px;
 	float: right;
 }
 		
@@ -252,18 +253,71 @@ button.faq-title.is-open:after {
 		
 		
 button.faq-title:hover, button.faq-title.is-open{
-	background-color: whitesmoke;
+	background-color: rgb(211, 207, 207);
 }
 
 .faq-text{
 	padding: 0 10px;
 	border-left: 1px solid whitesmoke;
 	border-right: 1px solid whitesmoke;
+	background-color: whitesmoke;
 	max-height: 0;
 	overflow: hidden;
 	transition: 0.5s ease-in-out;
 }
 
+
+.Contact{
+	background-image: url('../assets/FAQs.png');
+	width:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100%;
+}
+
+.contact-page{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.contact-left, .contact-right{
+	width: 40%;
+}
+
+.social-media{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 5vh;
+	margin: 30px;
+}
+
+.social-media a{
+	color: #000;
+}
+
+.social-media a:hover{
+	color: rgb(163, 163, 163);
+}
+
+.sosmed{
+	margin: 5px;
+}
+
+.form-message{
+border: 1px solid black;
+border-radius: 5px;
+margin: 50px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+}
+=======
 .contact-us{
 	background-color: green;
 	padding: 3em;
@@ -286,6 +340,7 @@ button.faq-title:hover, button.faq-title.is-open{
 	width: 25em;
 	margin	: .5em;
 }
+
 
 	
 
@@ -442,6 +497,14 @@ button.faq-title:hover, button.faq-title.is-open{
 		align-items: center;
 		width:100%;
 	}
+}
+
+@media only screen and (max-width: 700px) {
+	.FAQs{
+		width:100%;
+		height: 1200px;
+	}
+
 	.faq {
 		display: flex;
 		flex-direction: column;
@@ -449,10 +512,41 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 
 	.faq-left, .faq-right{
-		width: 80%;
+		width: 85%;
+	}
+
+	button.faq-title{
+		width: 100%;
+		padding: 0 17px;
+		font-size: 16px;
+	}
+
+	button.faq-title:after {
+		font-size: 25px;
+		float: right;
+	}
+	.contact-page{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	}
+	.contact-left, .contact-right{
+	width: 80%;
+	}
+	
+	.social-media{
+		font-size: 14px;
+	}
+
+	.form-message{
+	margin: 10px;
+	padding: 10px;
+	}
+
+	.form-message h1{
+		font-size: 25px;
 	}
 }
-
 
 
 /*for fonts*/
