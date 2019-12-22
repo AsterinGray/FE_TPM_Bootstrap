@@ -357,6 +357,12 @@ button.faq-title:hover, button.faq-title.is-open{
 	align-items: center;
 }
 
+.form_submit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 
 /*for fonts*/
 
