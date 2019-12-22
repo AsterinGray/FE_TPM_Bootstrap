@@ -29,4 +29,8 @@ let faq =
                 }
             }
         }
-        
+
+let navigationbar = document.querySelector(".ham-bar .navsbar")
+
+$(window).scroll(function(){
+})
