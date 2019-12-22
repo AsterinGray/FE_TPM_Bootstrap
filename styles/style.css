@@ -228,14 +228,17 @@ html,body{
 	margin: 0;
 	padding: 0;
 	height: fit-content;
-	
+}
+
+.faq-page h1{
+	font-family: "Fontania";
 }
 
 .faq{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-around; 
 }
 
 .faq-left , .faq-right{
@@ -248,7 +251,8 @@ button.faq-title{
 	border: none;
 	outline: none;
 	text-align: left;
-	padding: 10px;
+	font-size: 16px;
+	padding: 12px;
 	cursor: pointer;
 	transition: 0.2s linear;
 }
@@ -256,8 +260,9 @@ button.faq-title{
 button.faq-title:after {
 	content: '\f055';
 	font-family: "fontawesome";
-	font-size: 18px;
+	font-size: 20px;
 	float: right;
+	padding: auto;
 }
 		
 button.faq-title.is-open:after {
@@ -312,18 +317,18 @@ button.faq-title:hover, button.faq-title.is-open{
 }
 
 .social-media a:hover{
-	color: rgb(163, 163, 163);
+	color: rgb(105, 105, 105);
 }
 
 .sosmed{
-	margin: 5px;
+	margin: 8px;
 }
 
 .form-message{
 border: 1px solid black;
-border-radius: 5px;
-margin: 50px;
-padding: 10px;
+border-radius: 10%;
+margin: 55px;
+padding: 15px;
 display: flex;
 flex-direction: column;
 }
@@ -542,7 +547,7 @@ flex-direction: column;
 
 	button.faq-title{
 		width: 100%;
-		padding: 0 17px;
+		padding: 15px;
 		font-size: 16px;
 	}
 
@@ -563,11 +568,11 @@ flex-direction: column;
 	}
 	
 	.social-media{
-		font-size: 14px;
+		font-size: 18px;
 	}
 
 	.form-message{
-	margin: 10px;
+	margin: 50px;
 	padding: 10px;
 	}
 
