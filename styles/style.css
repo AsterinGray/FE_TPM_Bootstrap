@@ -447,20 +447,10 @@ flex-direction: column;
 		width: 90%;
 	}
 
-	.sponsor .platinum img{
+	.sponsor .platinum img,.sponsor .gold img,.sponsor .Media img,.sponsor .silver img{
 		max-width: 18em;
 		margin:1.3em;
 	}
-	.sponsor .gold img{
-		max-width: 12em;
-		margin:1.3em;
-	}
-	.sponsor .Media img,.sponsor .silver img{
-		max-width: 10em;
-		margin:1.3em;
-	}
-
-
 }
 
 @media only screen and (max-width: 500px) 
@@ -523,16 +513,8 @@ flex-direction: column;
 	.sponsor span h2{
 		font-size: 1.2em;
 	}
-	.sponsor .platinum img{
+	.sponsor .platinum img,.sponsor .gold img,.sponsor .Media img,.sponsor .silver img{
 		max-width: 12em;
-		margin:1.3em;
-	}
-	.sponsor .gold img{
-		max-width: 8em;
-		margin:1.3em;
-	}
-	.sponsor .Media img,.sponsor .silver img{
-		max-width: 6em;
 		margin:1.3em;
 	}
 	.faq {
