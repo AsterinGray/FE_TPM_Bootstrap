@@ -1,7 +1,7 @@
-var hem = document.querySelector(".header .ham-bar .ham");
-var tempat = document.querySelector(".navsbar");
-var hambar=document.querySelector('.ham-bar');
-var logo = document.querySelector('.logo');
+let hem = document.querySelector(".header .ham-bar .ham");
+let tempat = document.querySelector(".navsbar");
+let hambar=document.querySelector('.ham-bar');
+let logo = document.querySelector('.logo');
 
 
 hem.addEventListener('click',function(){
@@ -29,3 +29,4 @@ let faq =
                 }
             }
         }
+        
