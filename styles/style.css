@@ -308,8 +308,14 @@ button.faq-title:hover, button.faq-title.is-open{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-size: 5vh;
-	margin: 30px;
+	font-size: 28px;
+	margin: 40px;
+}
+
+.social-media span{
+	font-size: 15px; 
+	margin: 0 15px; 
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .social-media a{
@@ -321,16 +327,21 @@ button.faq-title:hover, button.faq-title.is-open{
 }
 
 .sosmed{
-	margin: 8px;
+	padding: 10px 65px 0 0;
 }
 
 .form-message{
-border: 1px solid black;
-border-radius: 10%;
-margin: 55px;
-padding: 15px;
-display: flex;
-flex-direction: column;
+	border: 1px solid whitesmoke;
+	border-radius: 4%;
+	margin: 30px;
+	padding: 60px;
+	display: flex;
+	flex-direction: column;
+	background-color: whitesmoke;
+}
+
+.form-message p{
+	font-size: 25px;
 }
 
 
@@ -459,11 +470,35 @@ flex-direction: column;
 		max-width: 10em;
 		margin:1.3em;
 	}
+	.contact-page{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.contact-left, .contact-right{
+		width: 60%;
+	}
+		
+	.social-media{
+		font-size: 1.5em;
+	}
 
+	.social-media span{
+		font-size: 15px;
+	}
 
+	.sosmed{
+		padding: 10px 30px 0 0;
+	}
+
+	.form-message{
+		margin: 40px;
+		padding: 40px;
+	}
+	
 }
 
-@media only screen and (max-width: 500px) 
+@media only screen and (max-width: 600px) 
 {
 	.ham-bar{
 		display: flex;
@@ -555,29 +590,27 @@ flex-direction: column;
 		font-size: 25px;
 		float: right;
 	}
-}
 
-@media only screen and (max-width: 700px) {
-	.contact-page{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	}
 	.contact-left, .contact-right{
-	width: 80%;
+		width: 80%;
 	}
-	
+
 	.social-media{
-		font-size: 18px;
+		font-size: 1.4em;
 	}
 
-	.form-message{
-	margin: 50px;
-	padding: 10px;
+	.social-media span{
+		font-size: 14px;
+		margin: 0 12px;
 	}
 
-	.form-message h1{
-		font-size: 25px;
+	.sosmed{
+		padding: 10px 20px 0 0;
+	}
+
+	.form-message p{
+		font-size: 24px;
 	}
 }
+
 
