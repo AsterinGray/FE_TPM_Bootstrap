@@ -3,6 +3,7 @@ html,body{
 	padding:0;
 	font-family: verdana;
 	height:100%;
+	scroll-behavior: smooth;
 }
 
 
@@ -87,20 +88,23 @@ html,body{
 	display:none;
 }
 .container{
-	display:flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 100%;
+	display: flex;
+    flex-direction: row;
+   	justify-content: space-around;
+   	align-items: center;
+   	min-height: 100vh;
+   	overflow: hidden;
+   	width: 100%;
+   	padding: 0!important;
 }
-.container h1{
+.container .title h1{
 	font-family: Fontania;
 	max-width:11em;
+	text-align: left;
 }
 .container img{
-	width:40%;
-	min-width: 100px;
-	height:auto;
+	max-width: 35%;
+    height: auto;
 }
 
 /*for landing*/
@@ -109,15 +113,14 @@ html,body{
 	display:flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
+	padding: 5em;
 }
 .landing > img{
-	width:40%;
-	min-width: 100px;
-	height:auto;
+	max-width: 35%;
+    height: auto;
 }
 .landing .text{
-	width:40%;
+	width:50%;
 }
 .landing .kotak{
 	width:20vh;
@@ -139,6 +142,10 @@ html,body{
 
 .navsbar > img.gambar{
 	display: block;
+}
+
+.landing .title, .why .title{
+	padding: 1.5em 0;
 }
 
 .why{
@@ -180,25 +187,32 @@ html,body{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
-	padding:3em;
+	padding:4em;
 }
-.sponsor .gold,.sponsor .silver,.sponsor .Media{
+.sponsor .platinum, .sponsor .gold,.sponsor .silver,.sponsor .Media{
 	display: flex;
 	flex-flow: wrap;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	margin: 2em;
 }
 
-.sponsor .platinum img, .sponsor .gold img, .sponsor .silver img{
-	max-width: 15em;
-	margin:1em;
+.sponsor .platinum img{
+	max-width: 25em;
+	margin:1.3em;
 }
-.sponsor .Media img{
+.sponsor .gold img{
+	max-width: 17em;
+	margin:1.3em;
+}
+.sponsor .Media img,.sponsor .silver img{
 	max-width: 12em;
-	margin:1em;
+	margin:1.3em;
 }
-
+.sponsor span h2{
+	font-size: 2.25rem;
+}
 
 
 /* FAQ */
@@ -314,6 +328,14 @@ display: flex;
 flex-direction: column;
 }
 
+
+/*for fonts*/
+
+@font-face {
+	font-family: "Fontania";
+	src:url('../assets/Fontania.ttf') format('truetype');
+}
+
 @media only screen and (max-width: 900px)
 {
 	.navsbar >.gambar>img#logo{
@@ -353,23 +375,27 @@ flex-direction: column;
 		transition:1s;
 	}
 	.navs-link .navs{
-		margin-bottom: 15px;
-		margin-top: 5px;
+		margin: .5em 0;
 	}
 	.navs-link .navs a{
 		color:black;
 	}
 	.container{
-		display:flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		width:100%;
-		overflow: hidden;
+		display: flex;
+   		justify-content: center;
+    	align-items: center;
+    	flex-direction: column-reverse;
+    	width: 100%;
+    	overflow: hidden;
 	}
-	.container h1{
-		margin: 1em;
+
+	.container .title h1{
 		text-align: center;
+		margin: 1em;
+	}
+
+	.container img {
+    	max-width: 80%;
 	}
 	.landing{
 		padding: 10px;
@@ -379,6 +405,9 @@ flex-direction: column;
 		align-items: center;
 		width:100%;
 		overflow: hidden;
+	}
+	.landing img{
+		max-width: 50%;
 	}
 	.landing h1{
 		text-align: center;
@@ -393,7 +422,6 @@ flex-direction: column;
 	.why{
 		flex-direction: column-reverse;
 		justify-content: center;
-		justify-items: center;
 		align-items: center;
 		padding: 1em;
 	}
@@ -413,6 +441,21 @@ flex-direction: column;
 	.caro{
 		width: 90%;
 	}
+
+	.sponsor .platinum img{
+		max-width: 18em;
+		margin:1.3em;
+	}
+	.sponsor .gold img{
+		max-width: 12em;
+		margin:1.3em;
+	}
+	.sponsor .Media img,.sponsor .silver img{
+		max-width: 10em;
+		margin:1.3em;
+	}
+
+
 }
 
 @media only screen and (max-width: 500px) 
@@ -450,14 +493,16 @@ flex-direction: column;
 		transition:1s;
 	}
 	.navs-link .navs{
-		margin-bottom: 15px;
-		margin-top: 5px;
+		margin: .5em 0;
 	}
 	.navs-link .navs a{
 		color:black;
 	}
 	.navs-link .navs a:hover{
 		color:white;
+	}
+	.container img {
+   		max-width: 80%;
 	}
 	.landing{
 		padding: 10px;
@@ -466,6 +511,24 @@ flex-direction: column;
 		justify-content: space-around;
 		align-items: center;
 		width:100%;
+	}
+	.landing img{
+		max-width: 80%;
+	}
+	.sponsor span h2{
+		font-size: 1.2em;
+	}
+	.sponsor .platinum img{
+		max-width: 12em;
+		margin:1.3em;
+	}
+	.sponsor .gold img{
+		max-width: 8em;
+		margin:1.3em;
+	}
+	.sponsor .Media img,.sponsor .silver img{
+		max-width: 6em;
+		margin:1.3em;
 	}
 	.faq {
 		display: flex;
@@ -513,10 +576,3 @@ flex-direction: column;
 	}
 }
 
-
-/*for fonts*/
-
-@font-face {
-	font-family: "Fontania";
-	src:url('../assets/Fontania.ttf') format('truetype');
-}
