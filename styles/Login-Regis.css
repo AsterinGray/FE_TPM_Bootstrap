@@ -17,26 +17,66 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     background-color: #86d8f7;
 }
 
 .Login-Regis{
-    text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 25rem;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 5px 10px 10px lightgray;
 }
 
-.Login-Regis img{
-    width: 15rem;
+.box-input{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-input img{
+    width: 2em;
+    margin: 0 .5em;
+}
+
+.extra{
+    width: 20em;
+    padding: .5em 1em;
+}
+
+.extra img{
+    width: 100%;
 }
 
 .form{
-    background-color: white;
-    width: 90%;
+    width: 25em;
     padding: 1.5em 1em;
     margin: 1em;
-    border-radius: 1em;
+    text-align: center;
+}
+
+.form h1{
+    font-family: Fontania;
+    margin: .5em .2em;
+}
+
+.form button{
+    margin: 1em;
+}
+
+@media only screen and (max-width: 900px){
+    .area{
+        text-align: center;
+        padding: 2em;
+    }
+
+    .Login-Regis{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .form{
+        font-size: 15px;
+    }
 }
