@@ -95,7 +95,6 @@ html,body{
    	min-height: 100vh;
    	overflow: hidden;
    	width: 100%;
-   	padding: 0!important;
 }
 .container .title h1{
 	font-family: Fontania;
@@ -230,7 +229,7 @@ html,body{
 
 /* FAQ */
 .FAQs{
-	background-image: url('../assets/FAQs.png');
+	background-color: #CAEBFB;
 	width:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
