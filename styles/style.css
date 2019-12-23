@@ -6,6 +6,12 @@ html,body{
 	scroll-behavior: smooth;
 }
 
+/*for fonts*/
+
+@font-face {
+	font-family: "Fontania";
+	src:url('../assets/Fontania.ttf') format('truetype');
+}
 
 /*for header*/
 .header{
@@ -345,12 +351,7 @@ button.faq-title:hover, button.faq-title.is-open{
 }
 
 
-/*for fonts*/
 
-@font-face {
-	font-family: "Fontania";
-	src:url('../assets/Fontania.ttf') format('truetype');
-}
 
 @media only screen and (max-width: 900px)
 {

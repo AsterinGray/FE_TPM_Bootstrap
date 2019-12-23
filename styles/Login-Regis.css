@@ -3,6 +3,13 @@ html, body{
     margin: 0;
 }
 
+/*for fonts*/
+
+@font-face {
+	font-family: "Fontania";
+	src:url('../assets/Fontania.ttf') format('truetype');
+}
+
 .area {
     width: 100%;
     min-height: 100%;
