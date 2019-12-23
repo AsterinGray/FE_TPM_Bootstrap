@@ -219,6 +219,10 @@ html,body{
 .FAQs{
 	background-image: url('../assets/FAQs.png');
 	width:100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100%;
@@ -228,10 +232,15 @@ html,body{
 	margin: 0;
 	padding: 0;
 	height: fit-content;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .faq-page h1{
 	font-family: "Fontania";
+	padding: 2em;
 }
 
 .faq{
@@ -239,6 +248,7 @@ html,body{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around; 
+	padding: 1em;
 }
 
 .faq-left , .faq-right{
@@ -342,6 +352,15 @@ button.faq-title:hover, button.faq-title.is-open{
 
 .form-message p{
 	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_submit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -462,6 +481,20 @@ button.faq-title:hover, button.faq-title.is-open{
 		max-width: 18em;
 		margin:1.3em;
 	}
+	
+	.contact-left, .contact-right{
+		width: 80%;
+	}
+
+
+	.sosmed{
+		padding: 10px 20px 0 20px;
+	}
+
+	.form-message{
+		margin: 50px 0;
+		padding: 24px;
+	}
 }
 
 @media only screen and (max-width: 600px) 
@@ -564,6 +597,11 @@ button.faq-title:hover, button.faq-title.is-open{
 
 	.sosmed{
 		padding: 10px 20px 0 0;
+	}
+
+	.form-message{
+		margin: 50px 10px;
+		padding: 24px;
 	}
 
 	.form-message p{
