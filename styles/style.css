@@ -9,7 +9,7 @@ html,body{
 
 /*for header*/
 .header{
-	background-image: url('../assets/Landing.png');
+	background-image: url('../assets/LandingBG.png');
 	width:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -175,18 +175,27 @@ html,body{
 	width: 50%;
 }
 
+
 .carousel-control-prev-icon , .carousel-control-next-icon{
-	color: cyan;
+	display: none;
+}
+
+.carousel-control-prev img , .carousel-control-next img{
+	width: 2em;
+}
+
+.seg img{
+	width: 100%;
 }
 
 /*for Sponsor*/
 .sponsor{
-	background-image: url('../assets/Sponsor.png');
+	background-color: #CAEBFB;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
 	align-items: center;
+	flex-direction: column;
 	padding:4em;
 }
 .sponsor .platinum, .sponsor .gold,.sponsor .silver,.sponsor .Media{
@@ -214,6 +223,10 @@ html,body{
 	font-size: 2.25rem;
 }
 
+.map iframe{
+	width: 100%;
+	height: 100vh;
+}
 
 /* FAQ */
 .FAQs{
