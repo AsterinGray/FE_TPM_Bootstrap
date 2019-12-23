@@ -15,7 +15,7 @@ html,body{
 
 /*for header*/
 .header{
-	background-image: url('../assets/Landing.png');
+	background-image: url('../assets/LandingBG.png');
 	width:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -101,7 +101,6 @@ html,body{
    	min-height: 100vh;
    	overflow: hidden;
    	width: 100%;
-   	padding: 0!important;
 }
 .container .title h1{
 	font-family: Fontania;
@@ -181,18 +180,27 @@ html,body{
 	width: 50%;
 }
 
+
 .carousel-control-prev-icon , .carousel-control-next-icon{
-	color: cyan;
+	display: none;
+}
+
+.carousel-control-prev img , .carousel-control-next img{
+	width: 2em;
+}
+
+.seg img{
+	width: 100%;
 }
 
 /*for Sponsor*/
 .sponsor{
-	background-image: url('../assets/Sponsor.png');
+	background-color: #CAEBFB;
 	background-size: cover;
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
 	align-items: center;
+	flex-direction: column;
 	padding:4em;
 }
 .sponsor .platinum, .sponsor .gold,.sponsor .silver,.sponsor .Media{
@@ -220,11 +228,19 @@ html,body{
 	font-size: 2.25rem;
 }
 
+.map iframe{
+	width: 100%;
+	height: 100vh;
+}
 
 /* FAQ */
 .FAQs{
-	background-image: url('../assets/FAQs.png');
+	background-color: #CAEBFB;
 	width:100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100%;
@@ -234,10 +250,15 @@ html,body{
 	margin: 0;
 	padding: 0;
 	height: fit-content;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .faq-page h1{
 	font-family: "Fontania";
+	padding: 2em;
 }
 
 .faq{
@@ -245,6 +266,7 @@ html,body{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around; 
+	padding: 1em;
 }
 
 .faq-left , .faq-right{
@@ -348,6 +370,15 @@ button.faq-title:hover, button.faq-title.is-open{
 
 .form-message p{
 	font-size: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_submit{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 
@@ -459,44 +490,24 @@ button.faq-title:hover, button.faq-title.is-open{
 		width: 90%;
 	}
 
-	.sponsor .platinum img{
+	.sponsor .platinum img,.sponsor .gold img,.sponsor .Media img,.sponsor .silver img{
 		max-width: 18em;
 		margin:1.3em;
 	}
-	.sponsor .gold img{
-		max-width: 12em;
-		margin:1.3em;
-	}
-	.sponsor .Media img,.sponsor .silver img{
-		max-width: 10em;
-		margin:1.3em;
-	}
-	.contact-page{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
+	
 	.contact-left, .contact-right{
-		width: 60%;
-	}
-		
-	.social-media{
-		font-size: 1.5em;
+		width: 80%;
 	}
 
-	.social-media span{
-		font-size: 15px;
-	}
 
 	.sosmed{
-		padding: 10px 30px 0 0;
+		padding: 10px 20px 0 20px;
 	}
 
 	.form-message{
-		margin: 40px;
-		padding: 40px;
+		margin: 50px 0;
+		padding: 24px;
 	}
-	
 }
 
 @media only screen and (max-width: 600px) 
@@ -559,16 +570,8 @@ button.faq-title:hover, button.faq-title.is-open{
 	.sponsor span h2{
 		font-size: 1.2em;
 	}
-	.sponsor .platinum img{
+	.sponsor .platinum img,.sponsor .gold img,.sponsor .Media img,.sponsor .silver img{
 		max-width: 12em;
-		margin:1.3em;
-	}
-	.sponsor .gold img{
-		max-width: 8em;
-		margin:1.3em;
-	}
-	.sponsor .Media img,.sponsor .silver img{
-		max-width: 6em;
 		margin:1.3em;
 	}
 	.faq {
@@ -607,6 +610,11 @@ button.faq-title:hover, button.faq-title.is-open{
 
 	.sosmed{
 		padding: 10px 20px 0 0;
+	}
+
+	.form-message{
+		margin: 50px 10px;
+		padding: 24px;
 	}
 
 	.form-message p{
