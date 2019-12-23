@@ -458,44 +458,10 @@ button.faq-title:hover, button.faq-title.is-open{
 		width: 90%;
 	}
 
-	.sponsor .platinum img{
+	.sponsor .platinum img,.sponsor .gold img,.sponsor .Media img,.sponsor .silver img{
 		max-width: 18em;
 		margin:1.3em;
 	}
-	.sponsor .gold img{
-		max-width: 12em;
-		margin:1.3em;
-	}
-	.sponsor .Media img,.sponsor .silver img{
-		max-width: 10em;
-		margin:1.3em;
-	}
-	.contact-page{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-	}
-	.contact-left, .contact-right{
-		width: 60%;
-	}
-		
-	.social-media{
-		font-size: 1.5em;
-	}
-
-	.social-media span{
-		font-size: 15px;
-	}
-
-	.sosmed{
-		padding: 10px 30px 0 0;
-	}
-
-	.form-message{
-		margin: 40px;
-		padding: 40px;
-	}
-	
 }
 
 @media only screen and (max-width: 600px) 
@@ -558,16 +524,8 @@ button.faq-title:hover, button.faq-title.is-open{
 	.sponsor span h2{
 		font-size: 1.2em;
 	}
-	.sponsor .platinum img{
+	.sponsor .platinum img,.sponsor .gold img,.sponsor .Media img,.sponsor .silver img{
 		max-width: 12em;
-		margin:1.3em;
-	}
-	.sponsor .gold img{
-		max-width: 8em;
-		margin:1.3em;
-	}
-	.sponsor .Media img,.sponsor .silver img{
-		max-width: 6em;
 		margin:1.3em;
 	}
 	.faq {
