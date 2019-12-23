@@ -1,4 +1,4 @@
-let hem = document.querySelector(".header .ham-bar .ham");
+let hem = document.querySelector(".UserNav .ham-bar .ham");
 let tempat = document.querySelector(".navsbar");
 let hambar=document.querySelector('.ham-bar');
 let logo = document.querySelector('.logo');

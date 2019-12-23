@@ -2,6 +2,84 @@ html, body{
     padding: 0;
     margin: 0;
 }
+.Dashboard{
+  background-color: lightblue;
+}
+
+/*for navbar*/
+.navsbar{
+  width:100%;
+  display: flex;
+  align-items: center;
+  color:white;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  padding:1em 1em;
+}
+.navsbar .gambar > img{
+  width: 10em;
+  height: auto;
+}
+.navs-link{
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.navs a{
+  padding: 10px 10px;
+  text-decoration: none;
+  margin:0 10px;
+  transition: .4s;
+  color:black;
+  font-weight: bold;
+}
+
+.navs a:hover{
+  background-color:salmon;
+  color:white;
+  margin:0px;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  border-radius: 1em;
+  transition: .4s;
+  text-decoration: none;
+}
+.navs span{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border:1px solid black;
+  border-radius: 1em;
+}
+.navs span a{
+  color:black;
+}
+
+.ham-bar{
+  display:none;
+}
+
+.ham{
+  padding: 5px 8px;
+}
+
+.hamburger{
+  width: 2em;
+  height: .3em;
+  background-color: black;
+  margin: .3em 0;
+}
+.ham-bar > img{
+  width: 10em;
+  height: auto;
+}
+.navs-links{
+  display:none;
+}
+
+
 
 .UserDeskboard{
     margin: 3.5em;
@@ -36,3 +114,84 @@ html, body{
   .form-left, .form-right{
     width: 40%;
   }
+  @media only screen and (max-width: 900px)
+  {
+
+    .navsbar >.gambar>img#logo{
+      display:none;
+    }
+    .ham-bar{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding:1em 1em;
+      box-sizing: border-box;
+      transition:1s;
+    }
+    .ham{
+      border:1px solid deepskyblue;
+    }
+    .hamburger{
+      background-color: black;
+    }
+    .navsbar >.gambar>img#logo{
+      display:none;
+    }
+    .navsbar{
+      height:130px;
+      width:100%;
+      overflow: scroll;
+      background-color:none;
+      display: none;
+    }
+    .navs-link{
+      display: flex;
+      flex-direction: column;
+      margin:auto;
+      text-align: center;
+      transition:1s;
+    }
+    .navs-link .navs{
+      margin: .5em 0;
+    }
+    .navs-link .navs a{
+      color:black;
+    }
+  @media only screen and (max-width: 600px) 
+  {
+    .ham-bar{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding:1em 1em;
+      box-sizing: border-box;
+      background-color: white;
+      transition:.8s;
+    }
+    .ham{
+      border: 0;
+    }
+    .hamburger{
+      background-color: black;
+    }
+    .navsbar >.gambar>img{
+      display:none;
+    }
+    .navsbar{
+      width:100%;
+      overflow: scroll;
+      display:none;
+    }
+    .navs-link{
+      display: flex;
+      flex-direction: column;
+      margin:auto;
+      text-align: center;
+      background-color: white;
+      transition:1s;
+    }
+    .navs-link .navs a:hover{
+      color:white;
+    }
