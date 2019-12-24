@@ -28,6 +28,12 @@ html, body{
     background-color: white;
     border-radius: 1em;
     box-shadow: 5px 10px 10px lightgray;
+    margin: 5% 0;
+}
+
+.Login-Regis img{
+    padding: 1em 0;
+    width: 100%;
 }
 
 .box-input{
@@ -48,6 +54,7 @@ html, body{
 .extra img{
     width: 100%;
 }
+
 
 .form{
     width: 25em;
