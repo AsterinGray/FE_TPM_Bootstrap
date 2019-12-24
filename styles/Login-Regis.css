@@ -60,12 +60,16 @@ html, body{
     width: 25em;
     padding: 1.5em 1em;
     margin: 1em;
-    text-align: center;
+    text-align: left;
+}
+
+.form h1 h3 {
+    margin: .5em .2em;
 }
 
 .form h1{
     font-family: Fontania;
-    margin: .5em .2em;
+    text-align: center;
 }
 
 .form button{
