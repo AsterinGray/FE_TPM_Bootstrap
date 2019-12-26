@@ -63,8 +63,23 @@ html, body{
     text-align: left;
 }
 
-.form h1 h3 {
-    margin: .5em .2em;
+.form{
+
+}
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec{
+    padding: .8em 0;
+}
+
+.sec h3{
+    border-bottom: skyblue 5px solid;
 }
 
 .form h1{
