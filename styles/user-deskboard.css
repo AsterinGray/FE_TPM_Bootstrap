@@ -136,6 +136,7 @@ html, body{
   padding: 1.5em;
 }
 
+
   @media only screen and (max-width: 900px)
   {
 
@@ -237,4 +238,5 @@ html, body{
     .form-left, .form-right{
       width: 80%;
     }
+
   }
