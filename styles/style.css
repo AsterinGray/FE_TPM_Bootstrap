@@ -401,7 +401,7 @@ button.faq-title:hover, button.faq-title.is-open{
 	display: flex;
 	flex-direction: row;
 	height: 5em;
-	background-color: ;
+	background-color: skyblue;
 	width: 100%;
 	padding: .5em;
 }
