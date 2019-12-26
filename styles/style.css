@@ -313,7 +313,7 @@ button.faq-title:hover, button.faq-title.is-open{
 }
 
 .Contact{
-	background-image: url('../assets/FAQs.png');
+	background-color:whitesmoke;
 	width:100%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -325,11 +325,23 @@ button.faq-title:hover, button.faq-title.is-open{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	height: 100%;
+	align-items: center;
+	height: fit-content;
 }
 
 .contact-left, .contact-right{
+	padding: 5% 0;
 	width: 40%;
+}
+
+.contact-left{
+	display: flex;
+	justify-content: center;
+}
+
+.social-media img{
+	width: 100%;
+	height: auto;
 }
 
 .social-media{
@@ -354,18 +366,22 @@ button.faq-title:hover, button.faq-title.is-open{
 	color: rgb(105, 105, 105);
 }
 
-.sosmed{
-	padding: 10px 65px 0 0;
+.sosmed-content{
+	padding: 1em;
 }
 
+/* .sosmed{
+	padding: 10px 65px 0 0;
+} */
+
 .form-message{
-	border: 1px solid whitesmoke;
+	border: 1px solid lightgray;
 	border-radius: 4%;
 	margin: 30px;
 	padding: 60px;
 	display: flex;
 	flex-direction: column;
-	background-color: whitesmoke;
+	background-color: lightgray;
 }
 
 .form-message p{
@@ -381,7 +397,25 @@ button.faq-title:hover, button.faq-title.is-open{
 	align-items: center;
 }
 
+.foot{
+	display: flex;
+	flex-direction: row;
+	height: 5em;
+	background-color: ;
+	width: 100%;
+	padding: .5em;
+}
 
+.foot-left, .foot-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.foot img{
+	width: 20%;
+}
 
 
 @media only screen and (max-width: 900px)
