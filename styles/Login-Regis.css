@@ -28,6 +28,12 @@ html, body{
     background-color: white;
     border-radius: 1em;
     box-shadow: 5px 10px 10px lightgray;
+    margin: 5% 0;
+}
+
+.Login-Regis img{
+    padding: 1em 0;
+    width: 100%;
 }
 
 .box-input{
@@ -49,16 +55,36 @@ html, body{
     width: 100%;
 }
 
+
 .form{
     width: 25em;
     padding: 1.5em 1em;
     margin: 1em;
-    text-align: center;
+    text-align: left;
+}
+
+.form{
+
+}
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec{
+    padding: .8em 0;
+}
+
+.sec h3{
+    border-bottom: skyblue 5px solid;
 }
 
 .form h1{
     font-family: Fontania;
-    margin: .5em .2em;
+    text-align: center;
 }
 
 .form button{
