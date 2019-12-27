@@ -20,7 +20,6 @@ html,body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 100%;
-	
 }
 .navsbar{
 	width:100%;
@@ -40,36 +39,29 @@ html,body{
 	font-size: 1.2em;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
 }
 
 .navs a{
-	padding: 10px 10px;
-	text-decoration: none;
-	margin:0 10px;
-	transition: .4s;
-	color:black;
+	border-radius: 1rem;
+	margin: 1em .5em;
+	padding : .5em;
+	color: black;
 	font-weight: bold;
+	text-decoration: none;
+	transition: .4s;
 }
 
-.navs a:hover{
-	background-color:salmon;
+#Regis a{
+	border-radius: 1rem;
+	background-color:#00afef;
+	color: white;
+}
+
+.navs a:hover, #Regis a:hover{
+	background-color:#66e1ff;
 	color:white;
-	margin:0px;
-	padding-right: 1.5em;
-	padding-left: 1.5em;
-	border-radius: 1em;
 	transition: .4s;
 	text-decoration: none;
-}
-.navs span{
-	padding-top: 3px;
-	padding-bottom: 3px;
-	border:1px solid black;
-	border-radius: 1em;
-}
-.navs span a{
-	color:black;
 }
 
 .ham-bar{
@@ -102,9 +94,9 @@ html,body{
    	overflow: hidden;
    	width: 100%;
 }
-.container .title h1{
+.title{
 	font-family: Fontania;
-	max-width:11em;
+	width: 40%;
 	text-align: left;
 }
 .container img{
@@ -474,8 +466,9 @@ button.faq-title:hover, button.faq-title.is-open{
     	overflow: hidden;
 	}
 
-	.container .title h1{
+	.title{
 		text-align: center;
+		width: 90%;
 		margin: 1em;
 	}
 
