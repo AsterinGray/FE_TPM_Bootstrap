@@ -14,6 +14,28 @@ html,body{
 	src:url('../assets/Fontania.ttf') format('truetype');
 }
 
+.loader{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: #e6e7e8;
+	z-index: 99;
+}
+
+.loader.hidden{
+	animation: fadeOut 3s;
+	animation-fill-mode: forwards;
+}
+
+.loader img{
+	animation: wobble 1s;
+	animation-delay: 0.5s;
+	width: 80%;
+}
+
 /*for header*/
 .header{
 	background-image: url('../assets/LandingBG.png');
@@ -22,6 +44,7 @@ html,body{
 	background-repeat: no-repeat;
 	min-height: 100%;
 }
+
 .navsbar{
 	width:100%;
 	display: flex;
@@ -31,6 +54,7 @@ html,body{
 	justify-content: space-between;
 	align-items: center;
 	padding:1em 1em;
+	height: 10vh;
 }
 .navsbar .gambar > img{
 	width: 10em;
@@ -67,6 +91,7 @@ html,body{
 
 .ham-bar{
 	display:none;
+	height: 10vh;
 }
 
 .ham{
@@ -91,8 +116,7 @@ html,body{
     flex-direction: row;
    	justify-content: space-around;
    	align-items: center;
-   	min-height: 100vh;
-   	overflow: hidden;
+   	min-height: 90vh;
    	width: 100%;
 }
 .title{
@@ -299,14 +323,27 @@ html,body{
 	justify-content: space-around; 
 	padding: 2em 0;
 	margin: 3em 0;
-	width: 90%;
+	width: 60%;
 	border-radius: 1em;
-	background-color: #66e1ff;
-	box-shadow: .5em .5em .5em lightblue;
+	/* background-color: #66e1ff; */
+	/* box-shadow: .5em .5em .5em lightblue; */
+}
+
+.faq-content{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.faq-content img{
+	width: 20%;
+	height: 50%;
+	margin: 1em 0;
 }
 
 .faq-left , .faq-right{
-	width: 40%
+	width: 45%
 }      
 
 button.faq-title{
@@ -319,6 +356,7 @@ button.faq-title{
 	padding: 12px;
 	cursor: pointer;
 	transition: 0.2s linear;
+	box-shadow: .5em -.5em .5em lightgray;
 }
 
 button.faq-title:after {
@@ -336,14 +374,16 @@ button.faq-title.is-open:after {
 		
 button.faq-title:hover, button.faq-title.is-open{
 	background-color: #00afef;
+	box-shadow: .5em -.5em .5em lightblue;
 }
 
 .faq-text{
 	padding: 0 .5em;
-	background-color: white;
+	background-color: whitesmoke;
 	max-height: 0;
 	overflow: hidden;
 	transition: 0.5s ease-in-out;
+	box-shadow: .5em -.5em .5em lightblue;
 }
 
 .Contact{
@@ -540,7 +580,7 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 
 	.why{
-		flex-direction: column-reverse;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 1em;
@@ -566,11 +606,22 @@ button.faq-title:hover, button.faq-title.is-open{
 		max-width: 18em;
 		margin:1.3em;
 	}
+
+	.faq-content{
+		flex-direction: column;
+	}
+
+	.faq-content img{
+		width: 50%;
+	}
+
+	.faq{
+		width: 80%;
+	}
 	
 	.contact-left, .contact-right{
 		width: 80%;
 	}
-
 
 	.sosmed{
 		padding: 10px 20px 0 20px;
@@ -694,4 +745,48 @@ button.faq-title:hover, button.faq-title.is-open{
 	}
 }
 
+@keyframes fadeOut{
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
 
+@keyframes wobble {
+from {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+15% {
+	-webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+	transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+}
+
+30% {
+	-webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+	transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+}
+
+45% {
+	-webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+	transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+}
+
+60% {
+	-webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+	transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+}
+
+75% {
+	-webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+	transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+}
+
+to {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+}
+
+  

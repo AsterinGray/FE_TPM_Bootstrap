@@ -1,9 +1,7 @@
-$(window).load(function(){
-    console.log("loading");
+window.addEventListener("load", function(){
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"
 })
-
-
-
 
 let hem = document.querySelector(".header .ham-bar .ham");
 let tempat = document.querySelector(".navsbar");
