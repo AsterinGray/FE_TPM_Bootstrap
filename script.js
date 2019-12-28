@@ -3,6 +3,18 @@ window.addEventListener("load", function(){
     loader.className += " hidden"
 })
 
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector(".navsbar").style.top = "0";
+        } 
+        else {
+            document.querySelector(".navsbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
 let hem = document.querySelector(".header .ham-bar .ham");
 let tempat = document.querySelector(".navsbar");
 let hambar=document.querySelector('.ham-bar');

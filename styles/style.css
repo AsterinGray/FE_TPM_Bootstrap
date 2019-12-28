@@ -62,15 +62,23 @@ html,body{
 	align-items: center;
 	padding:1em 1em;
 	height: 10vh;
+	position: fixed;
+	z-index: 98;
+	background-color: #e6e7e8;
 }
 .navsbar .gambar > img{
 	width: 10em;
 	height: auto;
 }
+
 .navs-link{
 	font-size: 1.2em;
 	display: flex;
 	flex-direction: row;
+}
+
+.navsbar.scrool{
+	background-color: #e6e7e8;
 }
 
 .navs a{
