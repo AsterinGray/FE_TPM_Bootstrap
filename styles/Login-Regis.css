@@ -72,6 +72,7 @@ html, body{
 }
 
 .form-col{
+    padding: 2em 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -104,10 +105,6 @@ html, body{
 
 .form button{
     margin: 1em;
-}
-
-.extra#Regis{
-    text-align: center;
 }
 
 @media only screen and (max-width: 900px){
