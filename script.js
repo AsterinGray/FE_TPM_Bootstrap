@@ -1,3 +1,10 @@
+$(window).load(function(){
+    console.log("loading");
+})
+
+
+
+
 let hem = document.querySelector(".header .ham-bar .ham");
 let tempat = document.querySelector(".navsbar");
 let hambar=document.querySelector('.ham-bar');
@@ -25,4 +32,3 @@ let faq = document.querySelectorAll(".faq-title");
             }
         }
     }
-        
