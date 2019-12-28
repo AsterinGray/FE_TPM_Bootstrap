@@ -27,6 +27,11 @@ html,body{
 	font-family: "Fontania";
 }
 
+.loader h1{
+	width: 80%;
+	text-align: center;
+}
+
 .loader.hidden{
 	animation: fadeOut 3s;
 	animation-fill-mode: forwards;
@@ -522,6 +527,10 @@ button.faq-title:hover, button.faq-title.is-open{
 
 @media only screen and (max-width: 900px)
 {
+	.loader h1{
+		font-size: 1em;	
+	}
+
 	.navsbar >.gambar>img#logo{
 		display:none;
 	}
@@ -586,6 +595,19 @@ button.faq-title:hover, button.faq-title.is-open{
 	.container img {
     	max-width: 80%;
 	}
+
+	.container h1{
+		font-size: 1.5em;
+	}
+
+	.container h3{
+		font-size: 1em;
+	}
+
+	.title-contain{
+		align-items: center;
+	}
+
 	.landing{
 		padding: 10px;
 		display:flex;
