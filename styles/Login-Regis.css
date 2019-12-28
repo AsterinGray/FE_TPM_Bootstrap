@@ -31,6 +31,10 @@ html, body{
     margin: 5% 0;
 }
 
+.Login-Regis#Regis{
+    width: 80%;
+}
+
 .Login-Regis img{
     padding: 1em 0;
     width: 100%;
@@ -63,8 +67,19 @@ html, body{
     text-align: left;
 }
 
-.form{
+.form#Regis{
+    width: 100%;
+}
 
+.form-col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.form-left, .form-right{
+    width: 40%;
+    height: fit-content;
 }
 
 .sub{
@@ -100,9 +115,26 @@ html, body{
     .Login-Regis{
         display: flex;
         flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .Login-Regis#Regis{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
     }
 
     .form{
         font-size: 15px;
+        width: 100%;
+    }
+
+    .form-col{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form-left, .form-right{
+        width: 100%;
     }
 }
